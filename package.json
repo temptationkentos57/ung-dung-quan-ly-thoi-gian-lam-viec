@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "client": "npm start --prefix client",
-    "server": "node server.js",  // Added script to run the server
-    "dev": "concurrently \"npm run server\" \"npm run client\""  // Run server and client concurrently
+    "server": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "express": "^4.17.1",
