@@ -12,6 +12,12 @@ mongoose.connect('mongodb://localhost/ung_dung_quan_ly_thoi_gian', { useNewUrlPa
   .then(() => console.log('Đã kết nối tới MongoDB'))
   .catch(err => console.log(err));
 
+// Middleware to handle errors 
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Có lỗi xảy ra!');
+});
+
 app.get('/', (req, res) => {
   res.send('API đang hoạt động!');
 });
