@@ -4,6 +4,7 @@
   "description": "Ứng dụng quản lý thời gian làm việc từ xa cho nhân viên và quản lý dự án.",
   "main": "server.js",
   "scripts": {
+    // Các lệnh để khởi động ứng dụng
     "start": "node server.js",
     "client": "npm start --prefix client",
     "server": "node server.js",
