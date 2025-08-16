@@ -5,8 +5,8 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
-app.use(express.json());
+app.use(cors()); // Enable CORS for all requests
+app.use(express.json()); // Parse incoming JSON requests
 
 // Kết nối tới MongoDB
 mongoose.connect('mongodb://localhost/ung_dung_quan_ly_thoi_gian', { useNewUrlParser: true, useUnifiedTopology: true })
